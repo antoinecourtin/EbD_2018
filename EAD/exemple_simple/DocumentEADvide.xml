@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "file:/C:/Ecole-des-Chartes/Master2/Module-Description-structuree/archivistique/ead2002/dtd/ead.dtd">
+<ead>
+ <eadheader>
+  <eadid></eadid>
+  <filedesc>
+   <titlestmt>
+    <titleproper></titleproper>
+   </titlestmt>
+  </filedesc>
+ </eadheader>
+ <archdesc level="">
+  <did></did>
+  <dsc>
+ 	<c>
+ 		<did></did>
+	</c>
+   </dsc>
+ </archdesc>
+</ead>

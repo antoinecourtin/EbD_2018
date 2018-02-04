@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE eac PUBLIC "-//Ad Hoc EAC Working Group//DTD eac.dtd (Encoded Archival Context (EAC) Beta Version)//EN" "eac.dtd">
+<eac type="corpname">
+	<eacheader status="edited" detaillevel="full" langencoding="iso639-2b" scriptencoding="iso15924" dateencoding="iso8601">
+		<eacid ownercode="AD88" countrycode="FR" syskey="FRAD88_00042">FRAD88_00042</eacid>
+		<mainhist>
+			<mainevent maintype="create">
+				<maindesc>Notice élaborée par Claire Sibille, direction des Archives de France</maindesc>
+				<maindate normal="2004-09">septembre 2004</maindate>
+			</mainevent>
+			<mainevent maintype="create">
+				<maindesc>Notice encodée en XML/EAC par A.Courtin via Oxygen</maindesc>
+				<maindate normal="2005-01-25">25 janvier 2005</maindate>
+			</mainevent>
+		</mainhist>
+		<languagedecl>
+			<language languagecode="fre">français</language>
+		</languagedecl>
+		<ruledecl>
+			<rule>Notice établie conformément aux normes ICA-ISAAR (CPF) du Conseil international des Archives et NF Z 44-060 Décembre 1986 Catalogage : forme et structure des vedettes de collectivités-auteurs</rule>
+			<rule id="NFZ44-060">Indexation conforme à la norme AFNOR NF Z44-060 (décembre 1996) Documentation - Catalogue d'auteurs et d'anonymes - Forme et structure des vedettes de collectivités-auteurs </rule>
+		</ruledecl>
+		<sourcedecl>
+			<source>Notice élaborée à partir de <title render="italic">Justices de paix, 1791-1958 [Texte imprimé] : répertoire numérique détaillé</title>.</source>
+		</sourcedecl>
+	</eacheader>
+	<condesc>
+		<identity>
+			<corphead authorized="AD88" rule="NFZ44-060">
+				<part>Justices de paix du département des Vosges</part>
+			</corphead>
+		</identity>
+		<desc>
+			<corpdesc>
+				<existdesc>
+					<existdate scope="begin-end" normal="1791/1958" form="closedspan">1791-1958</existdate>
+				</existdesc>
+				<legalstatus>
+					<value>public (administration déconcentrée)</value>
+				</legalstatus>
+				<corptype>
+					<value>collectivité territoriale</value>
+				</corptype>
+				<funactdesc>
+					<list>
+						<head>Juridiction contentieuse</head>
+						<item>Le juge de paix connaît des actions personnelles et mobilières dans les limites d’un taux maximum fixé par la loi. Ces montants peuvent être exceptionnellement dépassés pour :
+<list>
+								<item>les contestations entre hôteliers et clients, voyageurs et transporteurs</item>
+								<item>les conflits entre propriétaires et locataires</item>
+								<item>les conflits entre patrons et salariés ou domestiques et les contrats d’apprentissage (1851)</item>
+								<item>les actions possessoires et actions en bornage depuis 1838</item>
+								<item>les problèmes de limites et séparations, de plantations d’arbres, d’entretien des fossés et canaux</item>
+								<item>les dommages faits aux champs, fruits et récoltes</item>
+								<item>les actions civiles pour injures et diffamations (verbales depuis 1790, écrites sauf en matière de presse depuis 1838)</item>
+								<item>les rixes et voies de fait en l’absence de blessures</item>
+								<item>les demandes de pension militaire</item>
+							</list>
+						</item>
+					</list>
+					<list>
+						<head>Attributions en matière pénale</head>
+						<item>Officier de police judiciaire, le juge de paix est l’auxiliaire du parquet : il reçoit plaintes et dénonciations, rédige des procès-verbaux en matière de flagrant délit et de morts suspectes, réalise des enquêtes officieuses dont le nombre s’accroît avec la montée en puissance du ministère public. Le juge d’instruction lui délègue certains actes d’information par commission rogatoire. Les informations criminelles constituent une part importante des activités des juges de paix.</item>
+					</list>
+					<list>
+						<head>Juridiction gracieuse</head>
+						<item>Le juge de paix convoque et préside les conseils de famille qui délibèrent sur les intérêts des mineurs, interdits et absents, et reçoit les actes d’émancipation. Il rédige des actes de notoriété destinés à remplacer les actes d’état civil perdus ou à constater un événement. Il fournit également des certificats de propriété, en cas de décès, pour les caisses d’épargne, les rentes sur l’État et pensions.</item>
+					</list>
+					<list>
+						<head>Attributions administratives</head>
+						<item>Peu nombreuses au début, elles sont cesse augmentées dans la deuxième moitié du XIXe siècle. Il s’agit par exemple de l’octroi de nouvelles aides sociales publiques destinées aux différentes catégories de la population et du contrôle de l’État sur l’attribution de ces secours, ou de l’enregistrement des actes de société, des warrants agricoles, des contrats d’apprentissage, des prestations de serment de certains personnels administratifs ou assimilés. Le juge de paix veille aussi à l’application de certaines réglementations dans le domaine agricole, commercial et industriel. Il joue enfin un rôle de médiateur : il traite ainsi les contestations relatives aux listes électorales politiques et professionnelles, il règle également les litiges éventuels liés aux décisions de différentes commissions municipales opposant particuliers et administrations. Pour cela, il préside un grand nombre de commissions cantonales qui sont autant de “ juridictions administratives ”.</item>
+					</list>
+				</funactdesc>
+				<locations>
+					<!--list n'est utilisable qu'après location, location est obligatoire-->
+					<head>Sièges des justices de paix des Vosges</head>
+					<!--dans location, on ne peut mettre qu'un élément place, et il n'est pas possible d'entrer une liste (dont les items peuvent contenir place) directement ; il faudrait pouvoir en fait, soit avoir une liste dans location, soit, mieux,  avoir une date dans locations-->
+					<location>
+						<date normal="1790/1794">1790-an II</date>
+						<descnote>
+							<list>
+								<item>
+									<place>Allarmont</place>
+								</item>
+								<item>
+									<place>Bains-les-Bains</place>
+								</item>
+							</list>
+							<list>
+								<item>
+									<place>Beaufremont</place>
+								</item>
+								<!--etc-->
+							</list>
+						</descnote>
+					</location>
+					<location>
+						<date normal="1795-1800">an III-an VIII</date>
+						<descnote>
+							<list>
+								<item>
+									<place>Allarmont</place>
+								</item>
+								<item>
+									<place>Bains-les-Bains</place>
+								</item>
+								<!-- etc etc -->
+							</list>
+						</descnote>
+					</location>
+					<!-- etc etc -->
+				</locations>
+				<assetstruct>
+					<p>Le tribunal de paix est à l’origine composé du juge de paix et de deux assesseurs participant aux décisions, élus pour deux ans (loi du 24 août 1790, titre III°, puis trois avec la Constitution de l’an VIII. Les juges de paix sont tenus de prêter serment devant le conseil général de la commune du lieu de leur domicile. À partir de l’an IX, les assesseurs sont remplacés par des suppléants chargés seulement de remplacer le juge. En l’an X, l’élection de deux candidats par canton est tempérée par le fait que l’Empereur choisit l’un des élus qui reste en place pour dix ans. Le juge de paix désormais juge unique est nommé par le gouvernement (charte de 1814) et révocable. Au XIXe siècle, aucune capacité particulière n’est requise ; la licence en droit devient obligatoire par la loi du 12 juillet 1905 et un examen professionnel s’impose à tous les non diplômés à partir de 1918.</p>
+					<p>
+En 1790, les greffiers sont nommés au scrutin et à la majorité absolue des voix par les juges ; ils sont nommés à vie.
+</p>
+				</assetstruct>
+				<causa>
+					<list>
+						<item>Loi du 24 août 1790 sur l’organisation judiciaire : création des justices de paix
+</item>
+						<item>Ordonnance n° 58-1273 du 22 décembre 1958 relative à l’organisation judiciaire : suppression des justices de paix
+</item>
+					</list>
+				</causa>
+				<env>
+					<p>Les justices de paix s’inscrivent dans l’ordre des institutions judiciaires ordinaires aux côté des tribunaux de première instance, des cours d’assises, des cours d’appel, de la cour de cassation et du ministère de la Justice.</p>
+				</env>
+			</corpdesc>
+			<bioghist>
+				<p>La Révolution a bouleversé l’organisation institutionnelle de la France d’Ancien Régime, et en particulier sa carte judiciaire. Au terme de la proclamation royale du 20 août 1790, le canton est la circonscription des assemblées primaires ; sa superficie ne peut être inférieure à 4 lieues carrées ni supérieures à six. Le canton est aussi le ressort juridictionnel du juge de paix. </p>
+				<p>Quelques jours plus tard, le 24 août 1790, une loi sur l’organisation judiciaire est promulguée. Le titre III est consacré aux juges de paix.
+
+L’appellation de justice de paix est emprunté au vocabulaire anglais. À une justice répressive, celle des juges professionnels, se substitue une justice pacificatrice, exercée par des arbitres.
+
+</p>
+				<p>En 1958, la réforme judiciaire supprime les justices de paix et confie leurs attributions aux tribunaux d’instance d’arrondissement.
+</p>
+			</bioghist>
+		</desc>
+		<eacrels>
+			<eacrel reltype="later">
+				<corpname>Tribunaux d'instance d'arrondissement</corpname>
+				<descnote>En <date normal="1958">1958</date>, les tribunaux d’instance d’arrondissement remplacent les justices de paix.</descnote>
+			</eacrel>
+		</eacrels>
+		<resourcerels>
+			<resourcerel reltype="origination">
+				<archunit>
+					<unitdate normal="1791/1958">1791-1958</unitdate>
+					<unittitle>Fonds d'archives des justices de paix du département des Vosges.</unittitle>
+					<descnote>Description dans : <bibref>
+							<title>Justices de paix, 1791-1958 [Texte imprimé] : répertoire numérique détaillé</title>, [réd.] par Annick Petitdemange ; sous la direction de Mireille-Bénédicte Bouvet,.... et Yves Kinossian..., Epinal : Archives départementales des Vosges, 2003, 2 vol. (296, 320 p.) : ill., couv. ill. en coul. ; 30 cm.</bibref>
+					</descnote>
+					<repository>Archives départementales des Vosges</repository>
+				</archunit>
+			</resourcerel>
+		</resourcerels>
+	</condesc>
+</eac>

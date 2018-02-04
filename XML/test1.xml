@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- ci-dessus, la déclaration XML ; pas obligatoire, mais plus que recommandée ! 
+arguments, dans l'ordre :
+- version : version de la norme XML utilisée ;
+- encoding : jeu de caractères ; par défaut, UTF-8 ;
+- standalone (yes ou no) : déclare si la DTD est externe ou interne -->
+<!-- une déclaration de type de document -->
+    <!-- déclaration locale, elle peut coexister avec une déclaration de DTD externe, pour la compléter :
+        <!DOCTYPE Personnes [
+        
+        ]> -->
+
+    
+<!-- ** DECLARATION DE TYPE DE DOCUMENT**
+    - commence par le mot DOCTYPE
+    - espace, puis nom de l'élément racine du document XML
+    - espace puis, après le mot SYSTEM, déclaration de l'URI de la DTD -->
+<!-- Eventuelles instructions de traitement 
+ exemples : <?xml-stylesheet type="text/xsl" href="monxsl.xsl"?> : cette instruction appatraît toujours avant l'élément racine ; 
+                <?oxygen blabla ?> -->
+
+<!-- ** COMMENTAIRES**
+    En fait tout ce qui est coloré en vert dans oXygen est du commentaire, destiné à une lecture humaine -->
+<!-- ** ELEMENTS **
+Les noms, ou identificateurs génériques, des éléments et des attributs peuvent contenir des lettres et des chiffres, le trait souligné, le trait d'union et le point. sensibilité à la casse. Le premier caractère ne peut être un nombre, ni un point, ni un trait d'union.
+Les recommandations internationales, notamment celles de l'UN/CEFACT, précisent les bonnes pratiques  : pas de point ni autres séparateurs ; pas d'abréviations ; utilisation de la majuscule pour les premières lettres des  mots ; utilisation de l'anglais... ; cf. aussi recommandations du gouvernement belge 
+Un élément peut contenir :
+    - du texte ;
+    - un ou plusieurs éléments ; 
+    - du texte et un ou plusieurs éléments (contenu mixte) ;
+Ou bien être vide.
+Un élément possède obligatoirement une balise d'ouverture et une balise de fermeture.
+Les balises des éléments ne peuvent pas se chevaucher (imbrication stricte)
+-->
+<!-- un et un seul élément racine -->
+<!DOCTYPE PersonnePhysique SYSTEM "Personnes.dtd">
+<PersonnePhysique id="Dupont">
+    <Identité>
+        <NomDeFamille>Dupont</NomDeFamille>
+        <Prénoms>
+            <PrincipalPrénom>Jacques</PrincipalPrénom>
+            <AutrePrénom>Martin</AutrePrénom>
+            <AutrePrénom>Jules</AutrePrénom>
+            <!--  <Prénom>Martin</Prénom> -->
+            <!-- il peut y avoir d'autres prénoms <Prenom></Prenom> -->
+        </Prénoms>
+        <!-- les dates et lieux peuvent être inconnus -->
+        <!-- ** ATTRIBUTS **
+            - un attribut est une paire nom-valeur placée dans la balise d'ouverture d'un élément ;
+            - nom et valeur séparés par signe égal 
+            - valeur encadrée par simples ou doubles guillemets
+            - plusieurs attributs pour un élément, pas d'ordre pour les attributs
+            - un attribut ne peut contenir que du texte, s'il y figure des apostrophes, il faut les coder en utilisant les entités XML prédéfinies : &quot; ou &apos;
+        -->
+        <Genre codeGenre="1">masculin</Genre>
+        <Date formeNormalisée="1860-09-10">10 septembre 1860</Date>
+        <Date formeNormalisée="1915-01-02">2 janvier 1915</Date>
+        <LieuNaissance>Toulouse (Haute-Garonne, France)</LieuNaissance>
+               <LieuDécès>Paris (France)</LieuDécès>
+    </Identité>
+       <Biographie>
+        
+        <p>Jacques M. Dupont fit ses études au lycée Pierre de Fermat puis à l'Ecole des chartes.</p>
+        <p><Diplôme formeNormalisée="archiviste-paléographe">Archiviste-paléographe</Diplôme> en <Date formeNormalisée="1887">1887</Date>.</p>
+        <p>Il fut nommé conservateur au musée du Louvre en 1887, il y exerça successivement diverses fonctions blabla</p>
+        <p>Surtout connu pour son <Oeuvre>Etude sur les portails des églises romanes d'Aquitaine et du Languedoc</Oeuvre>, bla</p>
+        <p>Laissa ses archives personnelles au musée.</p>
+    </Biographie>
+    <Activités>
+        <Activité>
+            <Date formeNormalisée="1887/1915">1887-1915</Date>
+            <Organisme formeNormalisée="Musée du Louvre (Paris). Département des sculptures"
+                source="http://catalogue.bnf.fr/ark:/12148/cb11865023s/PUBLIC">Musée national du Louvre (Paris). Sculpture du Moyen-Age, de la
+                Renaissance et des temps modernes</Organisme>
+            <Fonction>conservateur chargé de la statuaire médiévale</Fonction>
+            <Note>
+                <p>blabla </p> </Note>
+        </Activité>
+        <Activité>
+            <Date>1895-1903</Date>
+            <Organisme>Ecole nationale des chartes (Paris, France)</Organisme>
+            <Fonction>professeur d'histoire de l'art</Fonction>
+        </Activité>
+        <Activité>
+            <Date>18..-1910</Date>
+            <Organisme>Editions Machin &amp; Cie </Organisme>
+            <Fonction>responsable de la collection "Moyen Age"</Fonction>
+            <!-- ** ENTITES CARACTERES PREDEFINIES **
+            dans le texte d'un élément ou d'un attribut, pour saisir un esperluette, ou ub chevron ouvrant (<), on utilisera des entités prédéfinies : &amp; et &lt; on peut aussi utiliser &gt; à la place du chevron fermant 
+            Pour les URL : c'est important de le savoir ! -->
+        </Activité>
+    </Activités>
+    <Adresses>
+        <Adresse>
+            <Date formeNormalisée="1888/1900">1888-1900</Date>
+            <Pays>France</Pays>
+            <Région>Ile-de-France</Région>
+            <Ville>Paris</Ville>
+            <Rue>13 rue Calvin</Rue>
+            <CodePostal>75005</CodePostal>
+        </Adresse>
+        <!--  <Adresse></Adresse> -->
+    </Adresses>
+<Famille>
+    <Parents type="père">
+        <Identité>
+            <NomDeFamille>Jacques</NomDeFamille>
+            <Prénoms>
+                <PrincipalPrénom>Michel</PrincipalPrénom>
+            </Prénoms>
+            <Genre codeGenre="1">Masculin</Genre>
+        </Identité>
+    </Parents>
+    <Enfants>
+        <Identité>
+            <NomDeFamille>Jacques</NomDeFamille>
+            <Prénoms>
+                <PrincipalPrénom>Louis</PrincipalPrénom>
+                
+            </Prénoms>
+            <Genre codeGenre="1">Masculin</Genre>
+        </Identité>
+    </Enfants>
+    <Grands-parents>
+        <Identité>
+            <NomDeFamille>Jacques</NomDeFamille>
+            <Prénoms>
+                <PrincipalPrénom>Henri</PrincipalPrénom>
+            </Prénoms>
+            <Genre codeGenre="1">Masculin</Genre>
+            
+        </Identité>
+            
+    </Grands-parents>
+</Famille>
+</PersonnePhysique>

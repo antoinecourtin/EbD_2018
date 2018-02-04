@@ -1,0 +1,257 @@
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Aux plaids de la seigneurie: aveu et dénombrement de tenure</title>
+                <author>
+                    <persName>Guyotjeannin</persName>
+                    <forename>Olivier</forename>
+                </author>
+                <author>
+                    <persName>Combes</persName>
+                    <forename>Laure</forename>
+                </author>
+                <respStmt>
+                    <resp>Encodé par</resp>
+                    <persName>Courtin, Antoine</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Ecole Nationale des Chartes</publisher>
+                <pubPlace>Paris</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Texte encodé à partir d'un fichier réalisé au traitement de texte avec l'éditeur
+                    Word</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application version="10" ident="Oxygen">
+                    <label>Oxygen XML Editor</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="2008-12-31">31 décembre 2008</date>
+            </creation>
+            <langUsage>
+                <language ident="fr">français</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="image.jpg" xml:id="facsim"/>
+    </facsimile>
+    <text>
+        <front>
+            <docTitle>
+                <titlePart>Acte de justice seigneuriale (<placeName>Normandie</placeName>)
+                </titlePart>
+            </docTitle>
+            <docDate when="1500-06-30">1500, 30 juin, <placeName>Auzebosc</placeName></docDate>
+            <div type="analyse">
+                <p>Guillaume Le Sueur reconnaît tenir de Guillaume de Bricqueville, seigneur
+                    d’Auzebosc et de Touffreville-la-Corbeline du chef de son épouse Jeanne Havart,
+                    une pièce de terre de sept verges, dans la paroisse de Valliquerville, pour
+                    laquelle il doit un chapon à Noël et trente œufs et quatre deniers à Pâques ; et
+                    une autre pièce de deux acres, en la même paroisse, pour laquelle il doit
+                    dix-neuf deniers à la Saint-Michel. Pour les deux terres, il doit en outre
+                    reliefs, treizièmes et aides coutumières. — Acte passé aux plaids de la
+                    seigneurie d’Auzebosc par le sénéchal de celle-ci, Guillaume Desmarés,
+                    écuyer.</p>
+            </div>
+            <div type="commentaire-diplomatique">
+                <p>L’écriture est exempte de cursivité, avare d’abréviations. Les premiers mots,
+                    presque rituels, sont grossis, et leur module décroît progressivement ; le Item
+                    de la l. 8, lui aussi grossi, guide l’œil vers la seconde terre déclarée. Mise
+                    en retrait, tracée peut-être de la même main, mais d’une écriture plus cursive,
+                    validée d’une simple signature, la mention finale authentifie de l’autorité
+                    judiciaire la déclaration préparée auparavant, ici sanctionnée et solennisée
+                    sous réserve d’un droit mesuré à la contestation (« sauf a blasmer… »). Un
+                    annotateur postérieur (XVI<hi  rend="super">e</hi> ou XVII<hi rend="super">e</hi> siècle ?) a numéroté les parcelles en
+                    marge, sans doute lors de la confection d’un terrier. Lisible et économe dans
+                    ses formes, standardisé dans ses modes descriptifs, le document, écrit à la fois
+                    pragmatique et authentique de la gestion d’une seigneurie foncière, constitue
+                    l’unité de base d’un terrier virtuel, constitué du rassemblement de ces menues
+                    pièces. Point ici de recours au notaire ni même au tabellion : tout repose sur
+                    la force prégnante de la justice seigneuriale. La diplomatique que développe
+                    celle-ci n’a pourtant rien d’autonome : la reconnaissance est coulée dans le
+                    moule de l’aveu et dénombrement seigneurial (« De noble… seigneur… tient et
+                    advoue a tenir…), même si le tenancier n’a pas droit au « je » du vassal qui
+                    scelle honorablement son aveu ; la validation passe par une signature
+                    directement dérivée des formes alors en usage parmi les tabellions.</p>
+            </div>
+        </front>
+        <body>
+            <div type="tableau_tradition">
+                <listWit>
+                    <witness xml:id="A">
+                        <msDesc>
+                            <msIdentifier>
+                                <repository>Bibliothèque Nationale de France</repository>
+                                <collection>Nouvelles Acquisitions Françaises</collection>
+                                <idno>987645</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <objectDesc>
+                                    <supportDesc>
+                                        <support>parchemin</support>
+                                    </supportDesc>
+                                    <layoutDesc>
+                                        <layout>
+                                            <dimensions>
+                                                <height>171</height>
+                                                <width>324</width>
+                                            </dimensions>
+                                        </layout>
+                                    </layoutDesc>
+                                </objectDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="B">
+                        <bibl> Fac-simile du <date> XIX <hi rend="super">e</hi> siècle</date>,
+                                <idno>ENC NF 30</idno> (héliogravure) </bibl>
+                    </witness>
+                    <witness xml:id="a">
+                        <bibl>
+                            <author>
+                                <persName>Dupont</persName>
+                            </author>
+                            <title>Une histoire de la famille de Bricqueville</title>
+                            <series>
+                                <title>Annales de Normandie</title>
+                            </series><idno>tomme 55</idno>
+                            <date>2009</date>
+                            <ref>p. 210-214</ref>d'après A. </bibl>
+                    </witness>
+                </listWit>
+            </div>
+            <div type="transcription">
+                <p>De noble et puissant seigneur <expan>mons<ex>eigneu</ex>r</expan> Guillaume de
+                        <persName xml:id="Bricqueville">Bricqueville</persName>, chevalier,
+                    seigneur</p>
+                <lb n="ligne2"/>
+                <p>de <placeName>Ausebosc</placeName> et de <placeName>Touffreville la
+                        Corbelline</placeName>, au droit de noble et puissante dame
+                            <expan>mada<ex>m</ex>e</expan></p>
+                <lb n="ligne3"/>
+                <p>Jehenne <app>
+                        <lem>Havart</lem>
+                        <rdg wit="#B #a">Havard</rdg>
+                    </app> sa femme, tient et adveue a tenir Guillaume Le Sueur une piece de
+                    terre</p>
+                <lb n="ligne4"/>
+                <p><expan>conten<ex>ant</ex></expan> sept <term xml:id="vergue">vergues</term>,
+                    assise en la paroisse de <placeName>Valiquierville</placeName> ; <choice>
+                        <sic>joute</sic>
+                        <corr>joute</corr>
+                    </choice> d’un costé Ambroise</p>
+                <lb n="ligne5"/>
+                <p>de La Court et ledit Guillaume Le Sueur, d’autre costé aud. Le Sueur et a Pierres
+                    Le Myre,</p>
+                <lb n="ligne6"/>
+                <p>d’un bout au chemin perreux et d’autre bout aud. Le Sueur. Et de ce doit
+                            <expan>aud<ex>it</ex></expan>
+                    <expan>s<ex>eigneu</ex>r</expan></p>
+                <lb n="ligne7"/>
+                <p>de <term xml:id="rente">rente</term> par ch<ex>asc</ex>un an au terme de Nouel
+                    ung cappon, au terme de Pasques trente</p>
+                <lb n="ligne8"/>
+                <p>œufz, quatre deniersc. Item led. Le Sueur tient dud.
+                        <expan>s<ex>eigneu</ex>r</expan> une autre piece de terre</p>
+                <lb n="ligne9"/>
+                <p><expan>conten<ex>ant</ex></expan> deux <term xml:id="acre">acres</term>, assise
+                    en icelle paroisse de Valiquierville ; jouxte d’un costé aux</p>
+                <lb n="ligne10"/>
+                <p>hoirs <expan>Guill<ex>aum</ex>e</expan> Bieurry, d’autre costé ausd. hoirs
+                    Bieurry et a icelluy Le Sueur, d’un bout</p>
+                <lb n="ligne11"/>
+                <p> ausd. hoirs Bieurry, et d’autre <supplied xml:id="bout">bout</supplied> a la rue
+                    de <placeName>Asselinbosc</placeName>. Et de ce doit de rente</p>
+                <lb n="ligne12"/>
+                <p>aud. seigneur par <expan>ch<ex>asc</ex>un</expan> an au terme <date
+                        xml:id="StMichiel">Saint Michiel</date> dix neuf deniers. Et avecques</p>
+                <lb n="ligne13"/>
+                <p>ce doit <expan>desd<ex>ites</ex></expan> deux pieces de terre <term
+                        xml:id="reliefs">reliefs</term>, <term xml:id="treizièmes">XIIImes</term> et
+                    aides coustumiers quant ilz <expan>esch<ex>eent</ex></expan>.</p>
+                <lb n="ligne14"/>
+                <p> Baillee es <term xml:id="ples">ples</term> de la s<ex>eigneu</ex>rie d’Auzebosc
+                    tenus aud. lieu par moy</p>
+                <lb n="ligne15"/>
+                <p><expan>Guill<ex>aum</ex>e</expan> Desmarés, escuier, seneschal dud. fief, le
+                    dernier</p>
+                <lb n="ligne16"/>
+                <p> jour de juing l’an mil cinq cens que fut receue, sauf</p>
+                <lb n="ligne17"/>
+                <p>a blasmer et <expan>ass<ex>ignati</ex>on</expan> etc.</p>
+                <lb n="ligne18"/>
+                <p> (Signé :) G. Desmarés (paraphe).</p>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <note target="#bout"> expression "autre bout" cachée par une tâche, A, restituée
+                    d'après le sens</note>
+                <note target="#Bricqueville">Guillaume appartient à une famille normande dont le
+                    fief principal, Bricqueville, se trouve en Bessin (Calvados, cant. Trévières).
+                    Il avait épousé en 1494 Jeanne Havart, fille et héritière en partie de Georges,
+                    vicomte de Dreux. Par sa mère, Antoinette d’Estouteville, Jeanne était liée aux
+                    Bourbon-Condé.</note>
+
+                <note target="#vergue">La verge (ou vergée) normande, mesure de superficie de
+                    quarante perches, équivalait à un quart d’acre ; au XVIIIe siècle, la verge
+                    ici</note>
+
+                <note target="#rente">« Rente », au sens générique de redevance ; nous dirions
+                    « cens ».</note>
+                <note target="#acre">L’acre, de 160 perches, valait au XVIIIe siècle, dans les
+                    localités usant comme ici des mesures de la vicomté de Rouen, 56,75 ares.</note>
+
+                <note target="#StMichiel">La Saint-Michel (29 septembre) est l’un des grands termes
+                    de paiement pratiqués en Normandie.</note>
+                <note target="#reliefs">Reliefs : droit de mutation.</note>
+                <note target="#treizièmes">Treizièmes : droit proportionnel au prix d’une
+                    vente.</note>
+                <note target="#ples">Comprendre « plaids », assises de la justice seigneuriale,
+                    tenues par le justicier (« sénéchal ») du seigneur.</note>
+            </div>
+            <div type="index">
+                <listPlace>
+                    <place xml:id="Auzebosc">
+                        <placeName>Auzebosc</placeName>
+                        <country>France</country>
+                        <district type="département">Seine-Maritime</district>
+                        <district type="canton">Yvetot</district>
+                    </place>
+                    <place xml:id="Touffreville">
+                        <placeName>Touffreville la Corbeline</placeName>
+                        <country>France</country>
+                        <district type="département">Seine-Maritime</district>
+                        <district type="canton">Yvetot</district>
+                    </place>
+                    <place xml:id="Valliquerville">
+                        <placeName>Valliquierville</placeName>
+                        <country>France</country>
+                        <district type="département">Seine-Maritime</district>
+                        <district type="canton">Yvetot</district>
+                        <note>le territoire communal jouxte celui d'Auzebosc</note>
+                    </place>
+                    <place xml:id="Asselimbosc">
+                        <placeName>Asselimbosc</placeName>
+                        <country>France</country>
+                        <district type="département">Seine-Maritime</district>
+                        <district type="canton">Yvetot</district>
+                        <district type="commune">Valliquerville</district>
+                        <note>hameau au sud-est du centre communal, sur la route d'Auzebosc</note>
+                    </place>
+                </listPlace>
+            </div>
+        </back>
+    </text>
+</TEI>

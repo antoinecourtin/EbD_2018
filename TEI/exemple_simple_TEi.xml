@@ -1,0 +1,156 @@
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/teilite.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De nouveaux accès aux lettres manuscrites <title>L'exemple de la
+                        correspondance de Nicolas <name type="persname">Fabri de Peiresc</name></title>
+                </title>
+                <author xml:id="RM">Mouren, Raphaële</author>
+                <respStmt>
+                    <resp>Encodé par</resp>
+                    <name>Courtin, Antoine</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Ecole Nationale des Sciences de l'Information et des Bibliothèques
+                    (ENSSIB)</publisher>
+                <idno>tome 52 numéro 6</idno>
+                <date>2008</date>
+                <pubPlace>Paris</pubPlace>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Bulletin des bibliothèques de France (BBF)</title>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Bulletin des Bibliothèques française, tome 52, numéro 6</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application version="10" ident="Oxygen">
+                    <label>Oxygen XML Editor</label>
+                </application>
+            </appInfo>
+            <projectDesc>
+                <p>Article encodé dans le cadre du cours d'introduction sur le TEI</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="bbf">
+                    <bibl>Bulletin des bibliothèques françaises</bibl>
+                    <category xml:id="article">
+                        <catDesc>article</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date>2008-12-08</date>
+            </creation>
+            <langUsage>
+                <language ident="fre">français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="Peiresc">
+                    <term>Peiresc</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Nombreux sont les chercheurs qui, travaillant sur l’histoire culturelle du XVII<hi
+                    rend="super">e</hi> siècle, ont passé quelques jours à la bibliothèque Méjanes
+                d’Aix-en-Provence pour dépouiller les quinze registres de correspondance de Nicolas
+                Fabri de Peiresc (1580-1637). Ces copies de lettres envoyées par ses correspondants
+                européens sont en effet une source centrale de l’histoire de la République des
+                Lettres. Une partie d’entre elles était bien entendu disponible dans des éditions,
+                mais celles-ci étaient partielles et dispersées ; l’édition principale, proposée au
+                    XIX<hi rend="super">e</hi> siècle par Tamizey de Laroque, demandait bien souvent
+                aux chercheurs de vérifier le texte. Pour préparer leur consultation, les chercheurs
+                disposaient des notices du <hi rend="italic">Catalogue général des manuscrits des
+                    bibliothèques publiques</hi>, qui décrivent sommairement le contenu des
+                registres. Depuis 2004, les spécialistes comme les curieux peuvent consulter ces
+                lettres d’une manière nouvelle, grâce à l’utilisation des outils informatiques.
+                Combinant en effet des financements et des aides techniques du ministère de la
+                Culture et de la Communication (Mission de la recherche et de la technologie) et du
+                projet européen et régional Internum <anchor xml:id="note1"/> , la bibliothèque
+                Méjanes a mené à bien un projet important de numérisation et de description : <list>
+                    <item>numérisation des quelque sept mille lettres copiées dans les
+                        registres</item>
+                    <item> indexation de chacune de ces lettres, en utilisant le format XML EAD et
+                        les normes de description existantes</item>
+                    <item> mise à disposition sur une plateforme numérique structurée en XML</item>
+                </list>
+            </p>
+            <p>Si la bibliothèque Méjanes avait déjà mené quelques projets, assez modestes, de
+                numérisation, c’était la première fois qu’elle se lançait dans un projet qui
+                demandait, à côté de la numérisation, un travail important de description. Elle a eu
+                la chance de pouvoir bénéficier des réflexions menées précédemment dans le cadre du
+                projet Internum par des institutions culturelles françaises, italiennes et
+                espagnoles – bibliothèques, archives, musées, laboratoires de recherche – sur
+                l’indexation (choix et utilisation des balises EAD, normes internationales
+                d’indication des dates, etc.), ainsi que de l’existence d’une plate-forme développée
+                dans le même cadre et permettant la mise en ligne rapide des images. Le maître
+                d’œuvre du projet Internum, le Centre de conservation du livre, a ainsi largement
+                participé au projet Peiresc en prenant en charge l’indexation des lettres, une à
+                une, la création d’une page d’accueil et l’hébergement sur sa plate-forme
+                numérique</p>
+            <p>L’indexation a consisté à créer pour chaque lettre une notice dans laquelle
+                apparaissent le nom de l’expéditeur et celui du destinataire sous leur forme
+                internationale, les lieux d’expédition et de réception, la date, la référence et la
+                description physique, ainsi que la langue utilisée. Tous ces champs d’indexation
+                peuvent faire l’objet de recherches simples ou croisées dans un formulaire de
+                recherche qui s’affiche toujours en premier sur les pages du site Internum. </p>
+            <p>Il a bien entendu fallu surmonter quelques difficultés, comme le fait que, s’agissant
+                d’une copie continue de ces lettres, on trouve souvent deux lettres sur la même page
+                (la fin d’une lettre suivie du début de la suivante), ce qui a demandé de traiter
+                deux fois la même image, en la rattachant à deux notices différentes. </p>
+            <p>Les lettres sont accessibles à partir de la plate-forme Internum, mais aussi du site
+                de la Cité du Livre (bibliothèque Méjanes) <anchor xml:id="note2"/>, et, grâce au
+                référencement des notices (balises « data » spécifiques), directement par les
+                moteurs et annuaires de recherche comme Google, Yahoo ou Exalead : les chercheurs en
+                effet, comme tout le monde, utilisent beaucoup moteurs et annuaires, et le
+                référencement est aujourd’hui indispensable dans un projet de ce type <anchor
+                    xml:id="note3"/>. </p>
+            <p>L’hébergement sur une plate-forme qui accueille des projets de numérisation très
+                variés et privilégie la création de bibliothèques virtuelles thématiques a, quant à
+                lui, plusieurs avantages pour les utilisateurs : <list type="bulleted">
+                    <item>il évite la dispersion qui se produit si chaque établissement met ses
+                        images numérisées sur son site : bien entendu, cette approche de la
+                        numérisation comme vitrine de l’institution a des avantages pour cette
+                        dernière, mais contraint les utilisateurs qui cherchent un document à se
+                        promener sans fin de site en site pour trouver ce qu’ils cherchent ou
+                        simplement savoir ce qui existe ;</item>
+                    <item>il permet la réunion de documents conservés dans des institutions
+                        éloignées. Ainsi, dès l’origine, le projet Peiresc a prévu l’intégration des
+                        lettres manuscrites conservées à la bibliothèque Inguimbertine ; les
+                        financements avaient été trouvés pour couvrir la dépense mais le projet n’a
+                        pu être mené à bien pour des raisons administratives. D’ores et déjà
+                        pourtant, un certain nombre d’autres documents concernant Peiresc sont
+                        proposés dans la « Bibliothèque virtuelle Peiresc » : manuscrits conservés à
+                        la bibliothèque Méjanes (catalogue de la bibliothèque de Peiresc), à la
+                        British Library et au Museum Meermanno Westreenianum <anchor xml:id="note4"
+                        /> de La Haye, mais aussi imprimés et documents iconographiques provenant du
+                        musée Paul Arbaud, de la bibliothèque Méjanes et d’une bibliothèque
+                        privée.</item>
+                </list>
+            </p>
+            <p>Par la réponse à un appel d’offres du ministère de la Culture et de la Communication, par des accords de collaboration avec des partenaires régionaux, la bibliothèque Méjanes a ainsi pu mettre à la disposition des chercheurs du monde entier, non pas seulement le texte des lettres reçues par Nicolas Fabri de Peiresc, mais surtout de nouveaux moyens d’y accéder grâce à la possibilité qui leur est offerte de faire des recherches documentaires précises à l’intérieur de cette collection. 
+            </p>
+        </body>
+        <back>
+            <div type="note">
+                <head>Notes</head>
+                <p>
+                    <note target="#note1">http://data.internum.org </note>
+                    <note target="#note2">www.citedulvire-aix.com</note>
+                    <note target="#note3">Voir sur le sujet : Raphaële Mouren et Isabelle Westeel, « L’accès en ligne aux manuscrits : possibilités de XML, systèmes de navigation, référencement » dans « Manuscrits dans tous leurs états », journées d’étude, 27-28 septembre 2006, Orléans, www.bm-orleans.fr rubrique Documents et services en ligne > journée des manuscrits.</note>
+                    <note target="#note4">www.meermanno.nl </note>
+                </p>
+            </div>
+           
+        </back>
+    </text>
+</TEI>
