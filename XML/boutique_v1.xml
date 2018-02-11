@@ -1,25 +1,28 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="no" ?>
-<?xml-stylesheet href="xslforboutique.xsl" type="text/xsl"?>
+<?xml-stylesheet href="xslforboutique_v1.xsl" type="text/xsl"?>
 
 <!DOCTYPE boutique SYSTEM "doc1.dtd">
 
 <boutique>
-  <telephone>
+  <telephone id="1">
     <marque>Samsung</marque>
     <modele>Galaxy S3</modele>
     <dispo>Oui</dispo>
   </telephone>
 
-  <telephone>
+  <telephone id="2">
     <marque>Apple</marque>
     <modele>iPhone 4</modele>
     <dispo>Oui</dispo>
-
   </telephone>
-
-  <telephone>
+  <telephone id="3">
     <marque>Nokia</marque>
     <modele>Lumia 800</modele>
     <dispo>Non</dispo>
+  </telephone>
+  <telephone id="4">
+    <marque>Nokia</marque>
+    <modele>Lumia 1900</modele>
+    <dispo>Oui</dispo>
   </telephone>
 </boutique>

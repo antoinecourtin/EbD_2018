@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="xslforboutique_v4.xsl" type="text/xsl"?>
+
+<!DOCTYPE boutique SYSTEM "doc1.dtd">
+
+<boutique>
+  <telephone id="1">
+    <marque>Samsung</marque>
+    <modele nouveaute="non">Galaxy S3</modele>
+    <dispo>Oui</dispo>
+    <couleur>Bleu</couleur>
+  </telephone>
+
+  <telephone id="2">
+    <marque>Apple</marque>
+    <modele nouveaute="non">iPhone 4</modele>
+    <dispo>Oui</dispo>
+    <couleur>Noir</couleur>
+
+  </telephone>
+  <telephone id="3">
+    <marque>Nokia</marque>
+    <modele nouveaute="non">Lumia 800</modele>
+    <dispo>Non</dispo>
+    <couleur>Rose</couleur>
+
+  </telephone>
+  <telephone id="4">
+    <marque>Nokia</marque>
+    <modele nouveaute="oui">Lumia 1900</modele>
+    <dispo>Oui</dispo>
+    <couleur>Vert</couleur>
+  </telephone>
+</boutique>
