@@ -1,4 +1,5 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="xslforboutique.xsl" type="text/xsl"?>
 
 <!DOCTYPE boutique SYSTEM "doc1.dtd">
 
@@ -6,17 +7,19 @@
   <telephone>
     <marque>Samsung</marque>
     <modele>Galaxy S3</modele>
+    <dispo>Oui</dispo>
   </telephone>
 
   <telephone>
     <marque>Apple</marque>
     <modele>iPhone 4</modele>
+    <dispo>Oui</dispo>
+
   </telephone>
 
   <telephone>
     <marque>Nokia</marque>
     <modele>Lumia 800</modele>
+    <dispo>Non</dispo>
   </telephone>
-</boutique>
-
 </boutique>
