@@ -34,6 +34,10 @@
   * http://prevu.fr/
   * http://lab.kb.nl/
   * http://va.goodformandspectacle.com/
+  * http://jiminy.medialab.sciences-po.fr/eat_datascape
+  * https://uclab.fh-potsdam.de/coins/
+  * https://uclab.fh-potsdam.de/hausmann/
+  * https://visualizingvisions.com/
 
 * autour de l'images
   * http://iiif.io
@@ -62,6 +66,7 @@
   * https://tools.wmflabs.org/wikishootme/index.htm
 
 * tools
+  * http://rawgraphs.io/
   * https://medium.com/@seeksanusername/tableau-p%C3%A9riodique-des-outils-ressources-pour-les-humanit%C3%A9s-num%C3%A9riques-43da3f5ff9ff
   * https://tropy.org
   * http://hdlab.stanford.edu/palladio-app/
