@@ -16,6 +16,7 @@
   * https://scinfolex.com/2013/07/31/ouverture-des-donnees-culturelles-the-times-they-are-changing/
   * http://www.enssib.fr/bibliotheque-numerique/notices/67307-patrimoine-numerise-et-open-content-quelle-place-pour-le-domaine-public-dans-les-bibliotheques-numeriques-patrimoniales
   * http://rightsstatements.org/en/
+  * https://data.culturecommunication.gouv.fr/explore/dataset/base-joconde-extrait/information/   
 
 * Projets GLAM / infoviz
   * https://francearchives.fr/
@@ -67,6 +68,7 @@
 
 * tools
   * http://rawgraphs.io/
+  * https://github.com/Dorialexander/Pyllica 
   * https://medium.com/@seeksanusername/tableau-p%C3%A9riodique-des-outils-ressources-pour-les-humanit%C3%A9s-num%C3%A9riques-43da3f5ff9ff
   * https://tropy.org
   * http://hdlab.stanford.edu/palladio-app/
