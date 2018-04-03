@@ -10,7 +10,6 @@
   * appeler dans le SELECT, votre variable + Label : exemple pour la variable inconnu ````?titre````, il faut écrire ````?titreLabel````
   * ajouter à votre requête dans les { } du WHERE ````SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . ````
 
-
 ### Quelques exemples de requêtes SPARQL
 
 #### Lister uniquement l'id de éléments des oeuvres de Klimt
@@ -211,3 +210,6 @@ SELECT ?item ?itemLabel ?coord WHERE {
   FILTER(REGEX(?itemLabel, "(ette)$"))
 }
 ````
+
+#### Réponse pour la requête Monet
+https://gist.github.com/antoinecourtin/149401410f486372ffb1958ead9f0264
