@@ -1,4 +1,4 @@
-## Listes d'URLs mentionnés pendant les 2 interventions
+## Listes d'URLs mentionnés pendant les 2 interventions à l'EBD
 
 * data comme matériaux artisitiques
   * http://www.data-dada.net/
@@ -68,7 +68,7 @@
 
 * tools
   * http://rawgraphs.io/
-  * https://github.com/Dorialexander/Pyllica 
+  * https://github.com/Dorialexander/Pyllica
   * https://medium.com/@seeksanusername/tableau-p%C3%A9riodique-des-outils-ressources-pour-les-humanit%C3%A9s-num%C3%A9riques-43da3f5ff9ff
   * https://tropy.org
   * http://hdlab.stanford.edu/palladio-app/
