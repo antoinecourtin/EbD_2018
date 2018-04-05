@@ -1,0 +1,442 @@
+[
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "Intitules",
+      "Date_debut",
+      "Date_fin",
+      "Date_texte",
+      "Localisation 2",
+      "Fonds_archives",
+      "Mentions_archives",
+      "Sources_en_ligne",
+      "Autres_sources",
+      "Documentation_evenements"
+    ]
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "Intitules",
+      "Date_debut",
+      "Date_fin",
+      "Date_texte",
+      "Localisation 2",
+      "Fonds_archives",
+      "Documentation_evenements"
+    ]
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "facetCount(value, 'value', 'Intitules') > 1",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "Intitules",
+          "omitBlank": false,
+          "columnName": "Intitules",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ]
+        },
+        {
+          "invert": false,
+          "expression": "row.flagged",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "columnName": "",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date_année at index 2 based on column Date_debut using expression grel:value.match(/.*(\\d{4}).*/)[0]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "date_année",
+    "columnInsertIndex": 2,
+    "baseColumnName": "Date_debut",
+    "expression": "grel:value.match(/.*(\\d{4}).*/)[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column date_année to date_debut_année",
+    "oldColumnName": "date_année",
+    "newColumnName": "date_debut_année"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date_fin_année at index 4 based on column Date_fin using expression grel:value.match(/.*(\\d{4}).*/)[0]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "date_fin_année",
+    "columnInsertIndex": 4,
+    "baseColumnName": "Date_fin",
+    "expression": "grel:value.match(/.*(\\d{4}).*/)[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date_debut_année using expression value.toDate()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_debut_année",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date_fin_année using expression value.toDate()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_fin_année",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column ville_expo at index 7 based on column Localisation 2 using expression grel:value.match(/.*(\\(.*\\)).*/)[0]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "ville_expo",
+    "columnInsertIndex": 7,
+    "baseColumnName": "Localisation 2",
+    "expression": "grel:value.match(/.*(\\(.*\\)).*/)[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/blank-down",
+    "description": "Blank down cells in column ville_expo",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "Localisation 2",
+          "omitBlank": false,
+          "columnName": "Localisation 2",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": " Musée basque et de l'histoire de Bayonne ",
+                "l": " Musée basque et de l'histoire de Bayonne "
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ville_expo"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column ville_expo using expression grel:value.replace(\"(\", \"\").replace(\")\",\"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ville_expo",
+    "expression": "grel:value.replace(\"(\", \"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date_debut_année using expression value.toString()",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "isBlank(value)",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "ville_expo",
+          "omitBlank": false,
+          "columnName": "ville_expo",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "date_debut_année",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition-by-fetching-urls",
+    "description": "Create column geocod at index 8 by fetching URLs based on column ville_expo using expression grel:\"http://api-adresse.data.gouv.fr/search/?q=\" + value",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "date_debut_année",
+          "omitBlank": false,
+          "columnName": "date_debut_année",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "1 janv. 1902",
+                "l": "1 janv. 1902"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "newColumnName": "geocod",
+    "columnInsertIndex": 8,
+    "baseColumnName": "ville_expo",
+    "urlExpression": "grel:\"http://api-adresse.data.gouv.fr/search/?q=\" + value",
+    "onError": "set-to-blank",
+    "delay": 5000
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column long at index 9 based on column geocod using expression grel:value.parseJson().features[0].geometry.coordinates[0]",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "date_debut_année",
+          "omitBlank": false,
+          "columnName": "date_debut_année",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "1 janv. 1902",
+                "l": "1 janv. 1902"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "newColumnName": "long",
+    "columnInsertIndex": 9,
+    "baseColumnName": "geocod",
+    "expression": "grel:value.parseJson().features[0].geometry.coordinates[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column lat at index 9 based on column geocod using expression grel:value.parseJson().features[0].geometry.coordinates[1]",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "date_debut_année",
+          "omitBlank": false,
+          "columnName": "date_debut_année",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "1 janv. 1902",
+                "l": "1 janv. 1902"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "newColumnName": "lat",
+    "columnInsertIndex": 9,
+    "baseColumnName": "geocod",
+    "expression": "grel:value.parseJson().features[0].geometry.coordinates[1]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column geocod",
+    "columnName": "geocod"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Localisation 2 to type Q207694",
+    "columnName": "Localisation 2",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/fr/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q207694",
+        "name": "musée d'art"
+      },
+      "autoMatch": false,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "isBlank(value)",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "lat",
+          "omitBlank": false,
+          "columnName": "lat",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column wikidata_museum at index 7 based on column Localisation 2 using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "isBlank(value)",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "lat",
+          "selectBlank": false,
+          "columnName": "lat",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "newColumnName": "wikidata_museum",
+    "columnInsertIndex": 7,
+    "baseColumnName": "Localisation 2",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column wikidata_museum using expression grel:\"https://www.wikidata.org/wiki/\" + value",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "isBlank(value)",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "lat",
+          "omitBlank": false,
+          "columnName": "lat",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "wikidata_museum",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Localisation 2 to Lieu",
+    "oldColumnName": "Localisation 2",
+    "newColumnName": "Lieu"
+  }
+]
